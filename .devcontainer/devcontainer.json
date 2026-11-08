@@ -1,0 +1,15 @@
+{
+  "name": "banking-crm-agent",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install -r requirements.txt && pip install -e . && python -m crm_agent.data.seed",
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": { "label": "Streamlit UI", "onAutoForward": "openBrowser" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": { "python.testing.pytestEnabled": true, "python.testing.pytestArgs": ["tests"] }
+    }
+  }
+}
