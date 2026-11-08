@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "CRM Agent – Web UI (Streamlit)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "src/crm_agent/interfaces/streamlit_app.py"],
+      "env": { "PYTHONPATH": "${workspaceFolder}/src" }
+    },
+    {
+      "name": "CRM Agent – Chat (CLI)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "crm_agent.interfaces.cli",
+      "args": ["--trace"],
+      "console": "integratedTerminal",
+      "env": { "PYTHONPATH": "${workspaceFolder}/src" }
+    },
+    {
+      "name": "CRM Agent – Demo script (3 use cases)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/run_demo.py",
+      "args": ["--trace", "--save"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
