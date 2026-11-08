@@ -11,7 +11,7 @@ It runs **fully offline with no API key** (rule-based intent parsing + multiling
 
 🎥 **Demo video:** _add your video link here_
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/YOUR-GITHUB-USERNAME/banking-crm-agent)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PranavGawali14/banking-crm-agent)
 
 > **Fastest way to try it:** click the badge above (or **Code → Codespaces → Create codespace on main**). Everything installs automatically in about 2 minutes. Then run `streamlit run src/crm_agent/interfaces/streamlit_app.py` in the terminal and click **Open in Browser**.
 
@@ -47,7 +47,7 @@ streamlit run src/crm_agent/interfaces/streamlit_app.py
 
 **macOS / Linux**
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/banking-crm-agent.git
+git clone https://github.com/PranavGawali14/banking-crm-agent.git
 cd banking-crm-agent
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt && pip install -e .
@@ -56,7 +56,7 @@ streamlit run src/crm_agent/interfaces/streamlit_app.py
 
 **Windows (PowerShell)**
 ```powershell
-git clone https://github.com/YOUR-GITHUB-USERNAME/banking-crm-agent.git
+git clone https://github.com/PranavGawali14/banking-crm-agent.git
 cd banking-crm-agent
 python -m venv .venv
 .venv\Scripts\Activate.ps1          # if blocked: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
