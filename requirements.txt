@@ -1,0 +1,15 @@
+# core (runs fully offline)
+pydantic>=2.5
+numpy>=1.26
+rich>=13.7
+python-dotenv>=1.0
+
+# optional – LLM providers (only needed if you set an API key)
+openai>=1.30
+anthropic>=0.40
+
+# optional – web UI
+streamlit>=1.50
+
+# dev
+pytest>=8.0

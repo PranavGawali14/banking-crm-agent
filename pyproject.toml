@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "banking-crm-agent"
+version = "1.0.0"
+description = "Conversational agentic AI co-pilot for banking Relationship Managers"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.5", "numpy>=1.26", "rich>=13.7", "python-dotenv>=1.0"]
+
+[project.optional-dependencies]
+llm = ["openai>=1.30", "anthropic>=0.40"]
+ui = ["streamlit>=1.50"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+crm-agent = "crm_agent.interfaces.cli:main"
+crm-seed = "crm_agent.data.seed:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-q"
